@@ -46,7 +46,7 @@ class PersonOverviewController():
   private def showPersonDetails(person: Option[Person]): Unit =
     person match
       case Some(person) =>
-        // Fill the labels with info from the person object.
+        // Fill the labels with info from the person object. (fxid)
         firstNameLabel.text <== person.firstName
         lastNameLabel.text <== person.lastName
         streetLabel.text <== person.street
